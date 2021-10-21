@@ -4,7 +4,9 @@ logs*
 *__pycache__*
 *dev_scripts*
 dags/.airflowignore
-local/key.json
+
+# My stuff
+docker/local/key.json
 
 # virtual env folers
 
