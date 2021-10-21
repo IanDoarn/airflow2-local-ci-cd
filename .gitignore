@@ -4,3 +4,4 @@ logs*
 *__pycache__*
 *dev_scripts*
 dags/.airflowignore
+local/key.json
