@@ -10,3 +10,9 @@ local/key.json
 
 /env
 /winenv
+
+# JetBrains
+/.idea
+
+# Airflow
+/dags/.airflowignore
