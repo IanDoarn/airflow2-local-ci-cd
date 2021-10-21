@@ -1,5 +1,4 @@
-# Make sure powershell is allow to execute scripts
-
+# Make sure powershell is allowed to execute scripts
 $scope = Get-ExecutionPolicy
 if ([string]$scope = "RemoteSigned") {
     "All is good."
