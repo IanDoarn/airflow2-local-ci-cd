@@ -18,3 +18,4 @@ docker/local/key.json
 
 # Airflow
 /dags/.airflowignore
+/dags
