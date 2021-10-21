@@ -9,12 +9,13 @@ AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL=30
 AIRFLOW__CORE__LAZY_LOAD_PLUGINS=false
 
 # - GCP project ID (required for GCP connection)
-GCP_PROJECT_ID='<your_project_id>' #<< GCP project-ID here
+GCP_PROJECT_ID='cogeco-edh-dev' #<< GCP project-ID here
 
 # - GCP connection (gcloud auth)
 GCP_AUTH_SCOPE='https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform'
 AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT='google-cloud-platform://user:password@host/schema?extra__google_cloud_platform__scope=${GCP_AUTH_SCOPE}&extra__google_cloud_platform__project=${GCP_PROJECT_ID}'
 
+GOOGLE_APPLICATION_CREDENTIALS=/opt/airflow/key.json
 
 ## -- Below NOT used -- ##
 # - GCP using service account keys json

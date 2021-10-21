@@ -10,5 +10,8 @@ ENV PATH $PATH:/home/airflow/google-cloud-sdk/bin
 COPY requirements-airflow.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# - GCP Stuff
+COPY ./local/key.json ${AIRFLOW_HOME}/key.json
+
 # - Copy a custom airflow config file
 #COPY airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
