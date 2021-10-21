@@ -5,3 +5,8 @@ logs*
 *dev_scripts*
 dags/.airflowignore
 local/key.json
+
+# virtual env folers
+
+/env
+/winenv
