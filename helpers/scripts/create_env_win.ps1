@@ -18,3 +18,6 @@ python -m venv winenv
 
 # activate it
 .\winenv\Scripts\activate
+
+# install what we need
+pip install -r local\requirements-local.txt
