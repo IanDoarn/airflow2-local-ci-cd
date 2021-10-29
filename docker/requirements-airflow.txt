@@ -3,3 +3,4 @@ pandas
 pyclean
 pytest-testconfig>=0.2.0
 pytest-airflow>=0.0.3
+jsonpointer==2.1

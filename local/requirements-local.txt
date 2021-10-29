@@ -1,2 +1,3 @@
 apache-airflow==2.1.1
 apache-airflow-providers-google==2.1.0
+jsonpointer==2.1

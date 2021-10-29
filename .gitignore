@@ -17,5 +17,5 @@ docker/local/key.json
 /.idea
 
 # Airflow
-/dags/.airflowignore
+/dags/.airflowignore
 /dags

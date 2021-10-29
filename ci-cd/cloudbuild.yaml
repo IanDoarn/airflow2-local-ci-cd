@@ -151,8 +151,8 @@ steps:
     id: 'clean-up-after-test'
   # [END clean-up-after-test]
 
-# - Style&Lint code.
-  # [START lint-code]
+# - Style&Lint core.
+  # [START lint-core]
   - name: 'gcr.io/${PROJECT_ID}/${_COMPOSER_BUILD_IMG_NAME}'
     waitFor: ['clean-up-after-test']
     entrypoint: 'bash'
@@ -170,13 +170,13 @@ steps:
           echo "***************************************************************************"
         fi
     dir: '.'
-    id: 'lint-code'
-  # [END lint-code]
+    id: 'lint-core'
+  # [END lint-core]
 
 # Stage composer-airflow-vars.json to data directory.
   # [START stage-airflow-variables]
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    waitFor: ['lint-code']
+    waitFor: ['lint-core']
     entrypoint: 'gcloud'
     args:
           [
